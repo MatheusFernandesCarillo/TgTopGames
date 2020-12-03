@@ -1,0 +1,15 @@
+$(".thumbnails").owlCarousel({
+	loop:true,
+	nav:true,
+	responsive:{
+		0:{
+			item:1
+		},
+		480:{
+			item:3
+		},
+		768:{
+			item:4
+}
+}
+});

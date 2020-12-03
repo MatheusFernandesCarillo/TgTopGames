@@ -1,0 +1,37 @@
+{% from './macros/form.html' import field  with context%}
+{% from './macros/flash.html' import flash  with context%}
+
+{% extends './base.html'%}
+
+
+{% block content %}
+
+	<section>
+		<div id="titulo">Fale Conosco</div>
+		<div id="conosco">Caso possua alguma duvida, critica, comentario, ou tiver notado algum erro em nosso site, por favor entre em contato conosco abaixo para que possamos auxilia-lo</div>
+
+		<form action="/contato" method="POST" id="contato">
+			{{form.csrf_token}}
+      		<div class="form-group">
+				  <label for="nome">Nome</label>
+				  {{ field(form,"nome","Digite o seu Nome aqui","form-control") }}
+      			
+      		</div>
+
+
+      		<div class="form-group">
+				  <label for="Email">E-mail</label>
+				  {{ field(form,"email","Digite seu E-mail aqui","form-control") }}
+      		</div>
+      		Mensagem
+      		<div class="form-group">
+				{{ field(form,"mensagem","Digite sua mensagem aqui","form-control") }}
+      		
+      		</div>
+			  <button type="submit" class="btn btn-cadastro">Enviar</button>
+			  {{ flash() }}
+      </form>
+
+
+	</section>
+{% endblock %}

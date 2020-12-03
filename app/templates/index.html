@@ -1,0 +1,98 @@
+{% extends './base.html'%}
+
+
+{% block content %}
+
+
+<!-- CONTEUDO -->
+<section>
+	<div id="noticias" class="container">
+
+		<div  id="titulo">NOTICIAS</div>
+		<div class="row thumbnails owl-carousel owl-theme">
+				<div class="item">
+						<div class="item-inner">
+							
+							<a href="/jogado2020"><img  {{ src("img/inicio/mais-jogados2020.png")}} alt="Noticia"></a>
+							<h3>Jogos mais jogados de 2020</h3>
+								<h4>confira os jogos mais jogados de 2020</h4>
+				</div>
+			</div>
+			<div class="item">
+						<div class="item-inner">
+							<a href="/cyberpunk"><img {{ src("img/inicio/cyberpunk.png") }} alt="Noticia"></a>
+							<h3>Cyberpunk 2077 tera opção de Desativar musicas licenciadas</h3>
+								<h4>Otima opção para criadores de conteúdo</h4>
+				</div>
+			</div>
+			<div class="item">
+						<div class="item-inner">
+							<a href="/lancamentos"><img {{ src("img/inicio/lançamentos.png") }} alt="Noticia"></a>
+							<h3>Lançamentos de jogos de Dezembro</h3>
+								<h4>Confira os jogos que serão lançados a partir de 01/12</h4>
+				</div>
+			</div>
+
+		</div>
+		<div id="divisor">
+		
+		</div>
+
+
+
+	<div id="jogados" class="container">
+
+		<div  id="titulo">JOGOS MAIS JOGADOS</div>
+
+		
+		<div class="row thumbnails owl-carousel owl-theme">
+			<div class="item">
+				<div class="item-inner">
+			
+					<a href="/pc"><img {{ src("img/inicio/portal.png") }} alt="Portal 2"></a>
+						<h3>Portal 2</h3>
+						<h4>Mais Jogado - Computador</h4>
+				</div>
+
+			</div>
+			<div class="item">
+				<div class="item-inner">
+			
+					<a href="/x360"><img {{ src("img/inicio/mine.png") }} alt="Minecraft"></a>
+						<h3>Minecraft</h3>
+						<h4>Mais Jogado - xBox 360</h4>
+
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-inner">
+			
+					<a href="/xone"><img {{ src("img/inicio/rotr.png") }} alt="Rise of the Tomb Raider"></a>
+						<h3>Rise of the Tomb Raider</h3>
+						<h4>Mais Jogado - xBox One</h4>
+
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-inner">
+			
+					<a href="/ps3"><img {{ src("img/inicio/tlou.png") }} alt="The Last of Us"></a>
+						<h3>The Last of Us</h3>
+						<h4>Mais Jogado - Playstation 3</h4>
+
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-inner">
+			
+					<a href="/ps4"><img {{ src("img/inicio/gow.png") }} alt="God of War"></a>
+						<h3>God of War</h3>
+						<h4>Mais Jogado - Playstation 4</h4>
+
+				</div>
+			</div>
+	</div>
+</section>
+
+
+{% endblock %}

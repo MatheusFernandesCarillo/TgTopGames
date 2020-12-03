@@ -1,0 +1,11 @@
+.table .thead-dark th {
+    color: #fff;
+    background-color: #96281b;
+    border-color: #400f0f;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #ffe7e7;
+    border-color: #e6dee2;
+}

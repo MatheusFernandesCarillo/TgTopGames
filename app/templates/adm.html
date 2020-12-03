@@ -1,0 +1,63 @@
+{% from './macros/form.html' import field  with context%}
+{% from './macros/flash.html' import flash  with context%}
+{% from './macros/import.html' import cssFile,jsFile %}
+
+
+{% extends './base.html'%}
+
+{% block css %}
+{{ cssFile('css/admin.css') }}
+{% endblock %}
+
+
+{% block content %}
+
+	<section>
+		<div id="titulo">Pagina de administrador</div>
+		
+
+		<div class="container">
+			{% if not logado %}
+			<form action="/adm" method="POST">
+				{{form.csrf_token}}
+				<div class="col-md-6 offset-md-3" style="background-color:#96281b;padding:15px;color:white;border-radius:15px">
+					<div class="form-group">
+						<label for="nome">Senha</label>
+						{{ field(form,"senha","Digite sua senha aqui","form-control") }}
+					</div>
+					<div class="form-group">
+						<label for="nome">Senha</label>
+						<button class="btn btn-block btn-dark">Entrar</button>
+					</div>
+				</div>
+			</form>
+			{% else %}
+			<div class="col-md-10 offset-md-1" style="border: 2px solid #8a1d1d;padding:15px;color:white;border-radius:15px">
+				<table class="table ">
+					<thead class="thead-dark">
+					  <tr>
+						<th scope="col">#</th>
+						<th scope="col">Nome</th>
+						<th scope="col">Email</th>
+						<th scope="col">Mensagem</th>
+					  </tr>
+					</thead>
+					<tbody>
+						{% for msg in messages %}
+					  <tr>
+						<th scope="row">1</th>
+						<td>{{ msg.nome }}</td>
+						<td>{{ msg.email }}</td>
+						<td>{{ msg.mensagem }}</td>
+					  </tr>
+					  {% endfor %}
+					</tbody>
+				  </table>
+			</div>
+
+			{% endif %}
+		</div>
+		
+		{{ flash() }}
+	</section>
+{% endblock %}

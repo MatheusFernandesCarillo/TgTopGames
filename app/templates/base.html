@@ -1,0 +1,120 @@
+
+{% from './macros/import.html' import cssFile,jsFile %}
+{% from './macros/address.html' import src %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Projeto Interdisciplinar</title>
+        {{ cssFile('lib/bootstrap/css/bootstrap.min.css') }}
+        {{ cssFile('lib/owl.carousel2/dist/assets/owl.carousel.min.css') }}
+        {{ cssFile('lib/owl.carousel2/dist/assets/owl.theme.default.min.css') }}
+        {{ cssFile('fonts/fontawesome/css/all.min.css') }}
+		{{ cssFile('css/style.css') }}
+		{% block css %}
+    	{% endblock %}
+	</head>
+	<body>
+    
+    <!-- HEADER TOPO -->
+	<header>
+			<div class="container">
+			
+				<div class="row">
+				
+					<nav id="menu">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/jogos">Jogos</a></li>
+							<li><a href="/contato">Fale Conosco</a></li>
+							
+						</ul>
+					</nav>
+
+
+				</div>
+			</div>
+			<div class="container">
+				<img id="logotipo" {{ src("img/logop.png")}} alt="Logotipo">
+			</div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+    <!-- FOOTER -->
+	<footer>
+			
+			<div class="row rodape">
+				
+				<div class="container">
+					
+					<div class="row">
+						
+						<div class="col-md-2 text-center">
+							
+							<img class="logotipo" {{ src("img/rodape.png") }} alt="Logotipo">
+
+						</div>
+						<div class="col-md-10">
+							
+							<div class="row row-cols">
+								
+								<div class="col-md-4 col-links">
+									
+									<h4>LINKS</h4>
+
+									<ul class="list-unstyled">
+										<li><a href="/"><i class="fa fa-angle-right"></i>Home</a></li>
+										<li><a href="/jogos"><i class="fa fa-angle-right"></i>Jogos</a></li>
+										<li><a href="/contato"><i class="fa fa-angle-right"></i>Fale Conosco</a></li>
+									</ul>
+
+								</div>
+								<div class="col-md-4 sobre-nos">
+									
+									<h4>SOBRE NÓS</h4>
+
+									<email>
+										<i class="far fa-envelope"></i> <span><b>E-mail de Contato</b><br/>contato@site.com</span>
+									</email>
+									<br/>
+
+
+									<p><a href="#"><i class="fa fa-phone"></i>(11) 12345-6789</a></p>
+									
+									
+
+									
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="rodape2">
+				
+				
+
+			</div>
+
+        
+    </footer>
+
+        {{ jsFile('lib/jquery/jquery.min.js') }}
+        {{ jsFile('lib/owl.carousel2/dist/owl.carousel.min.js') }}
+        {{ jsFile('lib/bootstrap/js/bootstrap.min.js') }}
+        {{ jsFile('js/script.js') }}
+
+
+	</body>
+
+
+	</html>

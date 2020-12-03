@@ -1,0 +1,27 @@
+
+{% from './macros/address.html' import src %}
+{% extends './base.html'%}
+
+
+{% block content %}
+
+<section>
+	<div id="titulo">CONFIRA OS JOGOS MAIS JOGADOS DE 2020</div>
+	<div id="jogados2020">
+		<img {{ src("img/noticias/fortnite.jpg") }} alt="">
+		<h4>Confira abaixo os 10 jogos mais jogados em 2020</h4>
+		<h3><b>1- Fortnite:</b> Número aproximado de jogadores: 250 milhões ativo<br/>
+		<b>2- Minecraft:</b> Número aproximado de jogadores: 112 milhões registrados<br/>
+		<b>3- Free Fire:</b> Número aproximado de jogadores: 50 milhões ativos todos os dias<br/>
+		<b>4- Call of Duty:</b> Warzone: Número aproximado de jogadores: 50 milhões registrados<br/>
+		<b>5- League of Legends:</b> Número aproximado de jogadores: 8 milhões simultâneos todos os dias<br/>
+		<b>6- Crossfire:</b> Número aproximado de jogadores: 650 milhões registrados<br/>
+		<b>7- Subway Surfers: </b>Número aproximado de jogadores: 27 milhões ativos<br/>
+		<b>8- Clash Royale:</b> Número aproximado de jogadores: 14 milhões ativos<br/>
+		<b>9- Clash of Clans:</b> Número aproximado de jogadores: 3 milhões por mês<br/>
+		<b>10- Apex Legends:</b> Número aproximado de jogadores: 2 milhões em todas as plataformas </h3>
+	</div>
+
+
+</section>
+{% endblock %}

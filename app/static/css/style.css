@@ -1,0 +1,501 @@
+@font-face {
+	font-family:'OpenSans';
+	src:url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family:'OpenSans-Light';
+	src:url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family:Anton ;
+	src: url("../fonts/Anton/Anton-Regular.ttf");
+}
+
+header{
+	width: 100%;
+	height: 120px;
+	background-color:#96281b; 
+	z-index: 2;
+	position: relative;
+}
+
+header .container{
+	position: relative;	
+}
+
+
+
+header #logotipo{
+	position: absolute;
+	top: 5px;
+}
+
+#menu {
+    margin: 12px 0;
+    position: absolute;
+    right: 0;
+}
+
+#menu {
+	margin: 30px 0px;
+}
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+}
+#menu li.search{
+	width: 182px;
+}
+
+
+#menu li a{
+	color:#FFF;
+	font-size: 16px;
+	padding: 10px 25px;	
+}
+
+#titulo {
+	color:#96281b;
+	font-family: 'Anton';
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#pc h2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+#pc h3{
+	color:#96281b;
+	font-family: 'Anton';
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#pc h4{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+
+#ps3 h2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+#ps3 h3{
+	color:#96281b;
+	font-family: 'Anton';
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#ps3 h4{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+#ps4 h2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+#ps4 h3{
+	color:#96281b;
+	font-family: 'Anton';
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#ps4 h4{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+#x360 h2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+#x360 h3{
+	color:#96281b;
+	font-family: 'Anton';
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#x360 h4{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+#xOne h2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+#xOne h3{
+	color:#96281b;
+	font-family: 'Anton';
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#xOne h4{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+#divisor{
+	background-color: #96281b;
+	width: 100%;
+	height: 2px ;
+	margin-bottom: 10px;
+}
+
+
+
+#rank {
+	font-family: 'Anton';
+	font-size: 25px;
+	width: 100%;
+}
+
+#rank li{
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+footer {
+	margin-top: 110px;
+}
+footer .row {
+	width: 100%;
+	margin-left: 0;
+}
+footer .row p {
+	line-height: 55px;
+	margin-bottom: 0;
+}
+footer .rodape {
+	height: 200px;
+	background-color: #d93e2b;
+}
+footer .rodape2 {
+	height: 20px;
+	background-color:#96281b ;
+	border-top: #242D37 1px solid;
+}
+
+footer .logotipo {
+	margin-top: 28px;
+}
+footer .col-links,
+footer .sobre-nos {
+	margin-top: 40px;
+
+}
+footer .row-cols h4 {
+	font-family: 'OpenSans';
+	font-size: 16px;
+	color: #FFF;
+	padding-bottom: 17px;
+	border-bottom: #242D37 1px solid;
+	
+}
+footer .row-cols h5 {
+	color: #666;
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+footer .row-cols time {
+	color: #FDE092;
+	font-family: Arial;
+	font-size: 14px;
+}
+footer .col-links a {
+	color: #FFF;
+	font-family: Arial;
+	font-size: 14px;
+}
+footer .col-links .fa {
+	margin: 0 6px;
+}
+footer .sobre-nos email {
+	color:#fff;
+	font-family: Lucida Bright;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+footer .sobre-nos email span {
+	display: inline-block;
+}
+footer .sobre-nos email i {
+	position: relative;
+	top: -14px;
+}
+footer .sobre-nos i {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 6px;
+
+}
+footer .sobre-nos a {
+	color: #fff;
+}
+footer .sobre-nos p {
+	line-height: 20px;
+}
+
+#rank hr {
+	border:#d93e2b solid 1px;
+	width: 150px;
+	margin-bottom: 50px;
+}
+#jogados {
+	position: relative;
+	top: 0px;
+}
+
+#jogados h2{
+	color: #5E2799;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#jogados hr{
+	border: #FDE192 solid 2px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#jogados .thumbnails{
+	margin-top: 20px; 
+}
+
+#jogados .thumbnails h3{
+	color: #96281b;
+	font-size: 18px;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#jogados .thumbnails h4{
+	color: #A7A7A7;
+	font-size: 14px;
+	font-family: 'OpenSans';
+}
+
+#jogados .thumbnails img{
+	width: 180px;
+}
+
+#jogados .thumbnails .item-inner{
+	padding: 10px;
+}
+
+#jogados .thumbnails .item-inner img{
+	width: 100%;
+}
+
+#contato {
+	margin-right: 400px;
+	margin-left: 400px;
+	color:#d93e2b;
+	font-family: 'Arial';
+}
+
+#conosco{
+	margin-right: 400px;
+	margin-left: 400px;
+	text-align: center;
+	color:#d93e2b;
+	font-family: 'Arial';
+}
+
+.btn-cadastro{
+	margin: 0;
+	background-color:#96281b;
+	color:#fff;
+}
+
+.owl-nav{
+	visibility: hidden;
+}
+
+.owl-dots{
+	transform: scaleX(-1);
+}
+
+#noticias {
+	position: relative;
+	top: 0px;
+}
+
+#noticias h2{
+	color: #5E2799;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#noticias hr{
+	border: #FDE192 solid 2px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#noticias .thumbnails{
+	margin-top: 20px; 
+}
+
+#noticias .thumbnails h3{
+	color: #96281b;
+	font-size: 18px;
+	font-family: 'Anton';
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#noticias .thumbnails h4{
+	color: #A7A7A7;
+	font-size: 14px;
+	font-family: 'OpenSans';
+}
+
+#noticias .thumbnails img{
+	width: 180px;
+}
+
+#noticias .thumbnails .item-inner{
+	padding: 10px;
+}
+
+#noticias .thumbnails .item-inner img{
+	width: 100%;
+}
+
+#cyberpunk{
+	margin-right: 400px;
+	margin-left: 400px;
+	text-align: center;
+}
+
+#cyberpunk img{
+	width: 600px;
+}
+
+#cyberpunk h3{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#cyberpunk h4{
+	color:#96281b ;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#jogados2020{
+	margin-right: 400px;
+	margin-left: 400px;
+	text-align: center;
+}
+
+#jogados2020 h3{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#jogados2020 h4{
+	color:#96281b ;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#jogados2020 img{
+	width: 600px;
+}
+
+
+#lancamento{
+	margin-right: 400px;
+	margin-left: 400px;
+	text-align: center;
+}
+
+#lancamento h3{
+	color:#d93e2b;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#lancamento h4{
+	color:#96281b ;
+	font-family: 'OpenSans';
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#lancamento img{
+	width: 600px;
+}
+

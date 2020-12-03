@@ -1,0 +1,10 @@
+
+
+{% macro field(form,data,placeholder="",class="") %}
+    {{getattr(form,data)(placeholder=placeholder,class=class)}}
+    {% if data in form.errors %}
+        <div class="alert alert-danger" role="alert" style="width: 100%;margin-top: 5px;" >
+        {{ form.errors[data][0] }}
+        </div>
+    {% endif %}
+{% endmacro %}
